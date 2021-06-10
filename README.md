@@ -16,16 +16,15 @@ Inspired from [MacOS Web](https://github.com/PuruVJ/macos-web).
 
 ## Stack
 
-```
-Framework - VueJS (v3).
-Styling Solution - TailWindCSS.
-```
+- Framework - VueJS (v3).
+- Styling Solution - TailWindCSS.
+
 
 [Roadmap]()
 
 ## When will it be ready?
 
-https://media.giphy.com/media/iHe7mA9M9SsyQ/giphy.gif
+![GIF](https://media.giphy.com/media/iHe7mA9M9SsyQ/giphy.gif)
 
 Who knows?
 
