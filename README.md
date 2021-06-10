@@ -1,24 +1,48 @@
-# windoweb
+## CubeOS
 
-## Project setup
+👨‍💻 Tiny Web based Operating System replica.
+
+This open source project aims to replicate some of the Operating System experience on web, using standard web technologies like HTML, CSS and JS
+
+CubeOS 👉 [cubeos.now.sh](https://cubeos.now.sh)
+
+<!-- Thumbnail  -->
+
+## Why
+
+I've always been very fascinated with types of operating systems, and always wanted to create my own OS. So I'm making the my own OS by myself. For web.
+
+Inspired from [MacOS Web](https://github.com/PuruVJ/macos-web).
+
+## Stack
+
 ```
-npm install
+Framework - VueJS (v3).
+Styling Solution - TailWindCSS.
 ```
 
-### Compiles and hot-reloads for development
+[Roadmap]()
+
+## When will it be ready?
+
+https://media.giphy.com/media/iHe7mA9M9SsyQ/giphy.gif
+
+Who knows?
+
+## Can I contribute?
+
+Sure, open an issue, point out errors, and what not.
+You're welcome to open a PR.
+I appreciate your support.
+
 ```
-npm run serve
+Star⭐ and Fork✔️ the Repository and see the more interesting future updates!
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+This project is developed for educational purposes only.
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Links
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[VueJS](https://vuejs.org/)
+
+[TailWindCSS](https://tailwindcss.com/)
