@@ -146,3 +146,25 @@ export let Drag = (EleID) => {
 
 // Function to Add Active Window Element Icons on TaskBar
 export let TaskBarIcon = () => {};
+
+export let LogInOut = (Mode) => {
+  if (Mode === 1) {
+    let PassInput = document.getElementById("Password");
+    if (PassInput.value === "root") {
+      let MainWindow = document.getElementById("Main");
+      let LoginWin = document.getElementById("LoginWin");
+      LoginWin.classList.toggle("lg:flex");
+      // MainWindow.classList.toggle("hidden");
+      MainWindow.classList.add("lg:flex");
+    } else {
+      return 0;
+    }
+  }
+  if (Mode === 2) {
+    let MainWindow = document.getElementById("Main");
+    let LoginWin = document.getElementById("LoginWin");
+    LoginWin.classList.toggle("lg:flex");
+    // MainWindow.classList.toggle("hidden");
+    MainWindow.classList.remove("lg:flex");
+  }
+};

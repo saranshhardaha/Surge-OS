@@ -1,16 +1,22 @@
 <template>
-  <MinAlert />
-  <main
-    class="lg:flex hidden max-h-screen h-screen flex flex-col justify-between"
-  >
-    <Home />
-    <TaskBar />
-  </main>
+  <div>
+    <MinAlert />
+    <LoginScreen />
+
+    <main
+    id="Main"
+      class="hidden max-h-screen h-screen flex flex-col justify-between"
+    >
+      <Home />
+      <TaskBar />
+    </main>
+  </div>
 </template>
 
 <script>
 import TaskBar from "@/components/TaskBar.vue";
 import MinAlert from "@/components/MinAlert.vue";
+import LoginScreen from "@/components/LoginScreen.vue";
 
 import Home from "@/views/Home.vue";
 
@@ -20,6 +26,7 @@ export default {
     Home,
     TaskBar,
     MinAlert,
+    LoginScreen,
   },
 };
 </script>

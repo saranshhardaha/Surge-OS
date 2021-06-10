@@ -1,10 +1,10 @@
 <template>
   <footer
-    class="h-12 w-full bg-opacity-5 relative bg-red-50 flex items-center justify-between"
+    class="h-12 w-full bg-black bg-opacity-20 backdrop-filter backdrop-blur-lg relative flex items-center justify-between"
   >
     <div
       id="TaskMenu"
-      class="hidden flex-row flex absolute left-0 bottom-12 max-w-max h-96 bg-black bg-opacity-90 backdrop-filter backdrop-blur-xs "
+      class="hidden flex-row flex absolute left-0 bottom-12 max-w-max h-96 bg-black bg-opacity-90 backdrop-filter backdrop-blur-sm "
     >
       <!-- Sidebar -->
       <div
@@ -64,7 +64,9 @@
             />
           </svg>
         </div>
-        <div class="p-4 text-white  hover:bg-white hover:bg-opacity-10">
+        <button
+        v-on:click="LogInOut(2)"
+         class="p-4 text-white  hover:bg-white hover:bg-opacity-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -79,7 +81,7 @@
               d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
             />
           </svg>
-        </div>
+        </button>
       </div>
       <!-- Start Tiles -->
       <div
@@ -248,7 +250,7 @@
 </template>
 <script>
 import { ref } from "vue";
-import { CreateWin } from "@/mixins/winFunctions";
+import { CreateWin, LogInOut } from "@/mixins/winFunctions";
 
 export default {
   setup() {
@@ -280,6 +282,7 @@ export default {
       date,
       openMenu,
       CreateWin,
+      LogInOut,
     };
   },
 };
