@@ -34,14 +34,13 @@ Sure, open an issue, point out errors, and what not.
 You're welcome to open a PR.
 I appreciate your support.
 
-```
-Star⭐ and Fork✔️ the Repository and see the more interesting future updates!
-```
+<hr/>
 
-This project is developed for educational purposes only.
+```
+Star⭐ and Fork✔️ the Repository and see more interesting future updates!
+```
+<p align="center"> This project is developed for educational purposes only. </p>
 
 ### Links
 
-[VueJS](https://vuejs.org/)
-
-[TailWindCSS](https://tailwindcss.com/)
+[VueJS](https://vuejs.org/) | [TailWindCSS](https://tailwindcss.com/)
