@@ -4,17 +4,20 @@
     <LoginScreen />
 
     <main
-    id="Main"
+      id="Main"
       class="hidden max-h-screen h-screen flex flex-col justify-between"
     >
-      <Home />
       <TaskBar />
+      <TaskMenu />
+
+      <Home />
     </main>
   </div>
 </template>
 
 <script>
 import TaskBar from "@/components/TaskBar.vue";
+import TaskMenu from "@/components/TaskMenu.vue";
 import MinAlert from "@/components/MinAlert.vue";
 import LoginScreen from "@/components/LoginScreen.vue";
 
@@ -25,6 +28,7 @@ export default {
   components: {
     Home,
     TaskBar,
+    TaskMenu,
     MinAlert,
     LoginScreen,
   },
@@ -41,10 +45,6 @@ export default {
 }
 
 body {
-  background-image: url(../public/images/bg-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .no-click {
   pointer-events: none;

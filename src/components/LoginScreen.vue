@@ -1,7 +1,8 @@
 <template>
+<div class="BG"></div>
   <div
     id="LoginWin"
-    class="max-h-screen relative h-screen hidden bg-black bg-opacity-60 backdrop-filter backdrop-blur-3xl lg:flex flex-col gap-6 items-center justify-center"
+    class="max-h-screen relative h-screen hidden bg-black bg-opacity-30 backdrop-filter backdrop-blur-md lg:flex flex-col gap-6 items-center justify-center"
   >
     <div class="relative h-44 w-44 flex items-center justify-center">
       <img
@@ -18,6 +19,8 @@
       <div class="px-3 py-1 rounded bg-white bg-opacity-5 flex items-center justify-center  transition-all duration-300 ease-in-out text-white hover:bg-opacity-10 focus:bg-opacity-10 focus-within:bg-opacity-10">
         <input
           type="password"
+          autofocus
+          autocomplete="off"
           id="Password"
           v-on:keyup.enter="LogInOut(1)"
           class="bg-transparent  focus:outline-none outline-none"
@@ -91,6 +94,17 @@ export default {
 };
 </script>
 <style scoped>
+.BG{
+  position: absolute;
+  z-index: -20;
+  height: 100vh;
+  width:100%;
+  background-color: #05182b;
+  background-image: url(../../public/images/bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .shape {
   animation: morph 2s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;

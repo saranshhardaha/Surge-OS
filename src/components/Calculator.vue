@@ -1,12 +1,12 @@
 <template>
   <div
     id="CalcWin"
-    class="absolute hidden window z-10 rounded-md text-white bg-black bg-opacity-80 backdrop-filter backdrop-blur-sm"
+    class="absolute overflow-auto min-w-max resize hidden z-10 rounded-md text-white bg-black bg-opacity-80 backdrop-filter backdrop-blur-sm"
   >
     <!-- TopBar -->
     <div
       id="CalcTop"
-      class="w-full z-0 rounded-t-md bg-black bg-opacity-40 flex items-center py-1 justify-between h-10 px-1"
+      class="w-full resize z-0 rounded-t-md bg-black bg-opacity-40 flex items-center py-1 justify-between h-10 px-1"
     >
       <!-- Left Side -->
       <div class="flex ">
@@ -76,7 +76,7 @@
       </div>
     </div>
     <!-- MainContent -->
-    <div class=" flex flex-col">
+    <div class="flex hc-40 resize flex-col" id="CalcMain">
       <div>
         <input
           type="text"
@@ -86,7 +86,7 @@
           v-model="CalcVal"
         />
       </div>
-      <div class="grid gap-1 p-3">
+      <div class="grid h-full gap-1 p-3">
         <div class="row grid-cols-4 grid gap-1">
           <button
             v-on:click="Clr()"
@@ -254,3 +254,15 @@ export default {
   },
 };
 </script>
+<style scoped>
+#CalcWin {
+  min-height: 425px;
+    overflow: hidden;
+}
+*::-webkit-resizer {
+  background: transparent;
+}
+.hc-40 {
+  height: calc(100% - 40px);
+}
+</style>

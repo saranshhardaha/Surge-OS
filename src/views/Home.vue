@@ -3,6 +3,7 @@
 
     <!-- AppWindows -->
     <Calculator />
+    <Notepad />
 
     <!--
         Main Icons 
@@ -37,6 +38,7 @@
       </button>
       <button
         id="notepad"
+        v-on:click="CreateWin('NoteWin')"
         class="p-4 focus:outline-none outline-none cursor-default hover:bg-white hover:bg-opacity-5 w-28 rounded-md flex flex-col gap-2 items-center"
       >
         <img
@@ -60,7 +62,6 @@
         <span class="text-xs no-click opacity-80">ControlPanel</span>
       </button>
     </section>
-
     <a
       href="https://github.com/5tupidbrain/CubeOS"
       class="p-4 text-white absolute right-0 bottom-0 focus:outline-none outline-none opacity-70 hover:opacity-100 w-28 rounded-md flex flex-col gap-2 items-center"
@@ -78,10 +79,14 @@
 </template>
 <script>
 import { onMounted } from "@vue/runtime-core";
+
 import { Drag, CreateWin } from "@/mixins/winFunctions";
+
 import Calculator from "@/components/Calculator.vue";
+import Notepad from "@/components/Notepad.vue";
+
 export default {
-  components: { Calculator },
+  components: { Calculator,Notepad },
   setup() {
     onMounted(() => {
       Drag("calc");
