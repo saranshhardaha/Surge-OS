@@ -80,7 +80,7 @@
       <p class="no-click text-sm text-white text-opacity-50">Password : root</p>
     </div>
     <div class="absolute cursor-default no-click text-gray-100 text-opacity-20 tracking-wide text-sm font-semibold bottom-4">
-        Cube OS
+        CueSys
     </div>
   </div>
 </template>

@@ -7,10 +7,9 @@
       id="Main"
       class="hidden max-h-screen h-screen flex flex-col justify-between"
     >
-      <TaskBar />
-      <TaskMenu />
-
       <Home />
+      <TaskMenu />
+      <TaskBar />
     </main>
   </div>
 </template>
@@ -43,8 +42,25 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-body {
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #556168 #CFD8DC;
+}
+.scrollbar::-webkit-scrollbar {
+  cursor: default !important;
+  width: 10px;
+}
+.scrollbar::-webkit-scrollbar-track{
+  border-radius: 12px;
+  background: #CFD8DC;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #8a8a8a;
+  border: 3px solid #CFD8DC;
+  border-radius: 12px;
+}
+.trans {
+  transition: 0.15s ease-in;
 }
 .no-click {
   pointer-events: none;

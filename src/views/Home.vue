@@ -1,9 +1,10 @@
 <template>
+  <div id="Wallpaper"></div>
   <div class="h-full overflow-hidden relative" id="MainWin">
-
     <!-- AppWindows -->
     <Calculator />
     <Notepad />
+    <Settings />
 
     <!--
         Main Icons 
@@ -34,7 +35,7 @@
           alt=""
           srcset=""
         />
-        <span class="text-xs no-click opacity-80">Chrome</span>
+        <span class="text-xs no-click opacity-80">Browser</span>
       </button>
       <button
         id="notepad"
@@ -59,11 +60,11 @@
           alt=""
           srcset=""
         />
-        <span class="text-xs no-click opacity-80">ControlPanel</span>
+        <span class="text-xs no-click opacity-80">Advance Settings</span>
       </button>
     </section>
     <a
-      href="https://github.com/5tupidbrain/CubeOS"
+      href="https://github.com/5tupidbrain/CueSys"
       class="p-4 text-white absolute right-0 bottom-0 focus:outline-none outline-none opacity-70 hover:opacity-100 w-28 rounded-md flex flex-col gap-2 items-center"
     >
       <img
@@ -74,7 +75,6 @@
       />
       <span class="text-xs no-click opacity-80">View Source</span>
     </a>
-
   </div>
 </template>
 <script>
@@ -84,9 +84,10 @@ import { Drag, CreateWin } from "@/mixins/winFunctions";
 
 import Calculator from "@/components/Calculator.vue";
 import Notepad from "@/components/Notepad.vue";
+import Settings from "@/components/Settings.vue";
 
 export default {
-  components: { Calculator,Notepad },
+  components: { Calculator, Notepad, Settings },
   setup() {
     onMounted(() => {
       Drag("calc");
@@ -96,7 +97,7 @@ export default {
     });
 
     return {
-      CreateWin
+      CreateWin,
     };
   },
 };
@@ -105,7 +106,13 @@ export default {
 * {
   transition: all linear 0.1s;
 }
-
+#Wallpaper {
+  position: absolute;
+  background-image: url("../../public/images/bg2.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
 .dragDiv {
   position: absolute;
   z-index: 9;

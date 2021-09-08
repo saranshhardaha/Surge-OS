@@ -1,17 +1,17 @@
 <template>
   <div
     id="CalcWin"
-    class="absolute overflow-auto min-w-max resize hidden z-10 rounded-md text-white bg-black bg-opacity-80 backdrop-filter backdrop-blur-sm"
+    class="absolute focus-within:z-20 overflow-auto min-w-max resize hidden z-10 rounded-md text-white bg-black bg-opacity-80 backdrop-filter backdrop-blur-sm"
   >
     <!-- TopBar -->
     <div
       id="CalcTop"
-      class="w-full resize z-0 rounded-t-md bg-black bg-opacity-40 flex items-center py-1 justify-between h-10 px-1"
+      class="w-full cursor-move resize z-0 rounded-t-md bg-black bg-opacity-40 flex items-center py-1 justify-between h-10 px-1"
     >
       <!-- Left Side -->
       <div class="flex ">
         <span
-          class="rounded p-1 text-opacity-80 text-white hover:text-opacity-100 hover:bg-white hover:bg-opacity-10 outline-none focus:outline-none"
+          class="rounded cursor-default p-1 text-opacity-80 text-white hover:text-opacity-100 hover:bg-white hover:bg-opacity-10 outline-none focus:outline-none"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -19,7 +19,7 @@
       <div class="flex h-full items-center text-white">
         <!-- Upward Arrow -->
         <button
-          class="hover:bg-white transform rotate-180 hover:bg-opacity-5 focus:outline-none cursor-default outline-none items-center flex h-full px-1"
+          class="hover:bg-white hover:bg-opacity-5 focus:outline-none cursor-default outline-none items-center flex h-full px-1"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,24 +38,7 @@
         </button>
         <!-- icons -->
         <div class="flex items-center  h-full text-white gap-1">
-          <button
-            class="hover:bg-white hover:bg-opacity-5 focus:outline-none cursor-default outline-none h-full px-1"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01"
-              />
-            </svg>
-          </button>
+          
           <button
             class="hover:bg-white hover:bg-opacity-5 focus:outline-none cursor-default outline-none h-full px-1"
           >
@@ -106,7 +89,7 @@
 </template>
 <script>
 import { ref } from "vue";
-import { CreateWin, LogInOut } from "@/mixins/winFunctions";
+import { CreateWin } from "@/mixins/winFunctions";
 
 export default {
   setup() {
@@ -138,7 +121,6 @@ export default {
       date,
       openMenu,
       CreateWin,
-      LogInOut,
     };
   },
 };

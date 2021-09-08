@@ -1,20 +1,20 @@
-## CubeOS
+## CubeOS  [CueSys]
 
 👨‍💻 Tiny Web based Operating System replica.
 
-This open source project aims to replicate some of the Operating System experience on web, using standard web technologies like HTML, CSS and JS
+This project aim is to replicate some of the Operating System experience on web, using standard web technologies like HTML, CSS and JS
 
-CubeOS 👉 [cubeos.now.sh](https://cubeos.now.sh)
+CubeOS 👉 [cuesys.now.sh](https://cuesys.now.sh)
 
 <!-- Thumbnail  -->
 
 ## Why
 
-I've always been very fascinated with types of operating systems, and always wanted to create my own OS. So I'm making the my own OS by myself. For web.
+I've always been very fascinated with types of operating systems, and always wanted to create my own OS. So I'm making the my own OS by myself on the web.
 
 Inspired from [MacOS Web](https://github.com/PuruVJ/macos-web).
 
-## Stack
+## Technologies 
 
 - Framework - VueJS (v3).
 - Styling Solution - TailWindCSS.
