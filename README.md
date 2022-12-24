@@ -1,10 +1,10 @@
-## CubeOS  [CueSys]
+## LimeOS
 
 👨‍💻 Tiny Web based Operating System replica.
 
 This project aim is to replicate some of the Operating System experience on web, using standard web technologies like HTML, CSS and JS
 
-CubeOS 👉 [cuesys.now.sh](https://cuesys.now.sh)
+LimeOS 👉 [limeos.now.sh](https://limeos.now.sh)
 
 <!-- Thumbnail  -->
 
