@@ -4,7 +4,7 @@
 
 This project aim is to replicate some of the Operating System experience on web, using standard web technologies like HTML, CSS and JS
 
-LimeOS 👉 [limeos.now.sh](https://limeos.now.sh)
+LimeOS 👉 [limeos.now.sh](https://surgeos.now.sh)
 
 <!-- Thumbnail  -->
 
